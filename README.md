@@ -1,3 +1,3 @@
 <p align="center">
-  <img src="./assets/neural-github-stats.svg" width="850" alt="Yoseph's GitHub statistics: stars, contributions, commits, issues, pull requests and repositories contributed to" />
+  <img src="./assets/neural-github-stats.svg?v=2" width="850" alt="Yoseph's GitHub statistics: stars, contributions, commits, issues, pull requests and repositories contributed to" />
 </p>
