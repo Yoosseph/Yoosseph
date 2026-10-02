@@ -100,7 +100,7 @@ class SVGTests(unittest.TestCase):
         values = dict.fromkeys([key for key, _, _ in stats.METRICS], 123456789012345)
         svg = stats.render_svg('name<&"', values, "2026-10-03")
         root = ET.fromstring(svg)
-        self.assertEqual(root.attrib["viewBox"], "0 0 880 432")
+        self.assertEqual(root.attrib["viewBox"], "0 0 880 548")
         self.assertIn("123.5T", svg)
         self.assertIn("123,456,789,012,345", svg)
         self.assertNotIn("{{", svg)

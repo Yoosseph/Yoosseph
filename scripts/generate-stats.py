@@ -289,41 +289,47 @@ def icon(kind, x, y, size=18, css=""):
 
 def render_svg(login, stats, updated):
     validate_stats(stats)
-    rows = []
-    for index, (key, label, kind) in enumerate(METRICS):
-        rows.append(f'''<g transform="translate(0 {index * 46})">
-      <rect class="stat-panel" width="368" height="39" rx="8" fill="url(#glass)" stroke="#263547" stroke-opacity=".55"/>
-      {icon(kind, 13, 10, css="metric-icon")}
-      <text class="metric-label" x="43" y="25">{label}</text>
-      <text class="metric-value" x="353" y="26"><title>{stats[key]:,}</title>{format_number(stats[key])}</text>
-    </g>''')
+    # Statistics are the network's nodes, surrounding a larger GitHub core.
     satellites = (
-        ("star", "Stars", 535, 113, "M535 113C602 110 577 188 650 225", 0),
-        ("activity", "Activity", 669, 83, "M669 83C716 131 611 173 650 225", 2),
-        ("commit", "Commits", 789, 151, "M789 151C730 146 738 203 650 225", 4),
-        ("pr", "Pull requests", 784, 298, "M784 298C718 312 741 226 650 225", 1),
-        ("issue", "Issues", 649, 354, "M649 354C599 309 696 280 650 225", 5),
-        ("repo", "Repositories", 509, 281, "M509 281C568 301 570 230 650 225", 3),
+        ("stars", "star", "Stars earned", "", 148, 174, "M148 174C274 139 294 263 450 280", 206, 162, 0),
+        ("contributions", "activity", "Contributions", "", 388, 150, "M388 150C457 173 386 228 450 280", 674, 162, 2),
+        ("commits", "commit", "Commits", "", 731, 187, "M731 187C600 157 590 268 450 280", 206, 308, 4),
+        ("issues", "issue", "Issues", "", 151, 371, "M151 371C280 409 295 292 450 280", 674, 308, 5),
+        ("prs", "pr", "PRs created", "", 448, 426, "M448 426C516 376 395 337 450 280", 206, 454, 1),
+        ("repositories", "repo", "Contributed to", "all time", 734, 380, "M734 380C600 415 606 292 450 280", 674, 454, 3),
     )
-    connections, nodes = [], []
-    for kind, label, x, y, curve, delay in satellites:
-        connections.append(f'''<path d="{curve}" stroke="url(#synapse)" stroke-width="1.3"/>
-      <path class="signal signal-{delay}" d="{curve}" stroke="#8ce6f2" stroke-width="2" pathLength="100" stroke-dasharray="2 98" stroke-dashoffset="100" opacity="0"/>''')
-        nodes.append(f'''<g transform="translate({x} {y})">
-      <circle r="31" fill="url(#node-halo)"/>
-      <circle class="satellite satellite-{delay}" r="23" fill="#101e2d" stroke="#3a819f" stroke-opacity=".75"/>
-      {icon(kind, -11, -11, 22)}
-      <circle cx="17" cy="-17" r="2.3" fill="#80d8ee"/>
-      <text class="node-label" y="43" text-anchor="middle">{label}</text>
+    connections, mobile_connections, nodes = [], [], []
+    metric_labels = {key: label for key, label, _ in METRICS}
+
+    def connection(curve, delay):
+        return f'''<path d="{curve}" stroke="url(#synapse)" stroke-width="1.3"/>
+      <path class="signal signal-{delay}" d="{curve}" stroke="#8ce6f2" stroke-width="2" pathLength="100" stroke-dasharray="2 98" stroke-dashoffset="100" opacity="0"/>'''
+
+    for key, kind, label, caption, x, y, curve, mobile_x, mobile_y, delay in satellites:
+        connections.append(connection(curve, delay))
+        mobile_curve = f"M{mobile_x} {mobile_y}Q440 {mobile_y} 440 308"
+        mobile_connections.append(connection(mobile_curve, delay))
+        value = format_number(stats[key])
+        # Bound unusually long scientific notation without truncating its digits.
+        value_fit = ' textLength="104" lengthAdjust="spacingAndGlyphs"' if len(value) > 7 else ''
+        nodes.append(f'''<g class="stat-node node-{key}" data-metric="{key}" transform="translate({x} {y})">
+      <title>{metric_labels[key]}: {stats[key]:,}</title>
+      <ellipse class="node-halo" rx="73" ry="73" fill="url(#node-halo)"/>
+      <ellipse class="satellite satellite-{delay}" rx="61" ry="61" fill="url(#glass)" stroke="#3a819f" stroke-opacity=".75"/>
+      {icon(kind, -10, -44, 20, css="metric-icon")}
+      <text class="metric-value" y="6"{value_fit}>{value}</text>
+      <text class="metric-label" y="29">{label}</text>
+      <text class="metric-caption" y="45">{caption}</text>
     </g>''')
-    particles = [(449, 78, 2), (476, 179, 2.5), (445, 343, 2), (553, 370, 2.5),
-                 (729, 375, 2), (833, 350, 2.5), (829, 228, 2), (811, 64, 2),
-                 (744, 86, 2), (590, 67, 1.8), (563, 207, 2), (708, 153, 1.6),
-                 (703, 308, 2), (479, 391, 1.6), (588, 331, 1.6)]
+    particles = [(47, 139, 2), (65, 279, 2.5), (47, 441, 2), (248, 469, 2.5),
+                 (622, 471, 2), (831, 448, 2.5), (819, 291, 2), (830, 114, 2),
+                 (594, 99, 2), (279, 100, 1.8), (294, 257, 2), (592, 249, 1.6),
+                 (587, 373, 2), (353, 343, 1.6), (256, 365, 1.6), (665, 308, 2)]
     replacements = {
         "LOGIN": escape(login), "UPDATED": escape(updated),
         "SUMMARY": escape("; ".join(f"{label}: {stats[key]:,}" for key, label, _ in METRICS)),
-        "ROWS": "\n".join(rows), "CONNECTIONS": "\n".join(connections), "NODES": "\n".join(nodes),
+        "CONNECTIONS": "\n".join(connections), "MOBILECONNECTIONS": "\n".join(mobile_connections),
+        "NODES": "\n".join(nodes),
         "PARTICLES": "".join(f'<circle cx="{x}" cy="{y}" r="{r}"/>' for x, y, r in particles),
     }
     template = (ROOT / "scripts/neural-stats-template.svg").read_text(encoding="utf-8")

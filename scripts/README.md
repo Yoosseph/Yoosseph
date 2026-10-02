@@ -3,8 +3,9 @@
 `generate-stats.py` uses only the Python standard library. The template includes
 inline logo paths, icons, gradients, styles and lightweight CSS animations. The
 generated SVG requires no external assets. It renders a static card if animations
-are unsupported, respects reduced motion, and switches to larger, full-width
-statistic rows below 600px.
+are unsupported and respects reduced motion. Each statistic lives inside a
+network node. Below 600px, the same nodes reflow into two columns with larger
+labels and values while retaining the central GitHub node and its connections.
 
 ## Automatic updates
 
