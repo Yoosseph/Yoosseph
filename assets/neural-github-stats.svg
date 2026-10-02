@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="548" viewBox="0 0 880 548" fill="none" role="img" aria-labelledby="title description">
   <title id="title">Yoosseph's GitHub stats</title>
-  <desc id="description">Total Stars Earned: 240; Total Contributions: 1,438; Total Commits: 1,068; Total Issues: 109; PRs Created: 54; Contributed to (all time): 17. All-time statistics visible to the GitHub API, updated 2026-10-02 UTC. A neural network connects activity nodes to the central GitHub logo.</desc>
+  <desc id="description">Total Stars Earned: 236; Total Contributions: 1,438; Total Commits: 193; Total Issues: 71; PRs Created: 9; Contributed to (all time): 17. All-time statistics visible to the GitHub API, updated 2026-10-02 UTC. A neural network connects activity nodes to the central GitHub logo.</desc>
   <defs>
     <linearGradient id="surface" x2="1" y2="1"><stop stop-color="#0d1117"/><stop offset="1" stop-color="#0d1520"/></linearGradient>
     <linearGradient id="glass" x2="1" y2="1"><stop stop-color="#142536"/><stop offset="1" stop-color="#101923"/></linearGradient>
@@ -92,11 +92,11 @@
         <text class="core-label" y="53">GitHub</text>
       </g>
       <g class="stat-node node-stars" data-metric="stars" transform="translate(148 174)">
-      <title>Total Stars Earned: 240</title>
+      <title>Total Stars Earned: 236</title>
       <ellipse class="node-halo" rx="73" ry="73" fill="url(#node-halo)"/>
       <ellipse class="satellite satellite-0" rx="61" ry="61" fill="url(#glass)" stroke="#3a819f" stroke-opacity=".75"/>
       <g class="metric-icon" transform="translate(-10 -44) scale(0.8333333333333334)" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8l-6.2 3.3L7 14.2 2 9.3l6.9-1Z"/></g>
-      <text class="metric-value" y="6">240</text>
+      <text class="metric-value" y="6">236</text>
       <text class="metric-label" y="29">Stars earned</text>
       <text class="metric-caption" y="45"></text>
     </g>
@@ -110,29 +110,29 @@
       <text class="metric-caption" y="45"></text>
     </g>
 <g class="stat-node node-commits" data-metric="commits" transform="translate(731 187)">
-      <title>Total Commits: 1,068</title>
+      <title>Total Commits: 193</title>
       <ellipse class="node-halo" rx="73" ry="73" fill="url(#node-halo)"/>
       <ellipse class="satellite satellite-4" rx="61" ry="61" fill="url(#glass)" stroke="#3a819f" stroke-opacity=".75"/>
       <g class="metric-icon" transform="translate(-10 -44) scale(0.8333333333333334)" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h6m8 0h6"/><circle cx="12" cy="12" r="4"/></g>
-      <text class="metric-value" y="6">1,068</text>
+      <text class="metric-value" y="6">193</text>
       <text class="metric-label" y="29">Commits</text>
       <text class="metric-caption" y="45"></text>
     </g>
 <g class="stat-node node-issues" data-metric="issues" transform="translate(151 371)">
-      <title>Total Issues: 109</title>
+      <title>Total Issues: 71</title>
       <ellipse class="node-halo" rx="73" ry="73" fill="url(#node-halo)"/>
       <ellipse class="satellite satellite-5" rx="61" ry="61" fill="url(#glass)" stroke="#3a819f" stroke-opacity=".75"/>
       <g class="metric-icon" transform="translate(-10 -44) scale(0.8333333333333334)" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v6m0 4v.1"/></g>
-      <text class="metric-value" y="6">109</text>
+      <text class="metric-value" y="6">71</text>
       <text class="metric-label" y="29">Issues</text>
       <text class="metric-caption" y="45"></text>
     </g>
 <g class="stat-node node-prs" data-metric="prs" transform="translate(448 426)">
-      <title>PRs Created: 54</title>
+      <title>PRs Created: 9</title>
       <ellipse class="node-halo" rx="73" ry="73" fill="url(#node-halo)"/>
       <ellipse class="satellite satellite-1" rx="61" ry="61" fill="url(#glass)" stroke="#3a819f" stroke-opacity=".75"/>
       <g class="metric-icon" transform="translate(-10 -44) scale(0.8333333333333334)" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="4" r="2"/><circle cx="6" cy="20" r="2"/><circle cx="18" cy="20" r="2"/><path d="M6 6v12m12 0v-7a5 5 0 0 0-5-5h-1m3-3-3 3 3 3"/></g>
-      <text class="metric-value" y="6">54</text>
+      <text class="metric-value" y="6">9</text>
       <text class="metric-label" y="29">PRs created</text>
       <text class="metric-caption" y="45"></text>
     </g>
