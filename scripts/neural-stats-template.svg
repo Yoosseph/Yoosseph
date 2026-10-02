@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="880" height="548" viewBox="0 0 880 548" fill="none" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="420" viewBox="0 76 880 420" fill="none" role="img" aria-labelledby="title description">
   <title id="title">{{LOGIN}}'s GitHub stats</title>
   <desc id="description">{{SUMMARY}}. All-time statistics visible to the GitHub API, updated {{UPDATED}} UTC. A neural network connects activity nodes to the central GitHub logo.</desc>
   <defs>
@@ -9,16 +9,14 @@
     <radialGradient id="node-halo"><stop stop-color="#53c8e3" stop-opacity=".14"/><stop offset="1" stop-color="#53c8e3" stop-opacity="0"/></radialGradient>
     <radialGradient id="core"><stop stop-color="#19364a"/><stop offset="1" stop-color="#101e2c"/></radialGradient>
     <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-    <clipPath id="card-clip"><rect x="1" y="1" width="878" height="546" rx="17"/></clipPath>
+    <clipPath id="card-clip"><rect x="1" y="77" width="878" height="418" rx="17"/></clipPath>
   </defs>
   <style>
     text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
-    .heading { fill:#e6edf3; font-size:27px; font-weight:650; letter-spacing:-.6px; }
-    .subtitle,.footer { fill:#8b9bad; font-size:12px; }
     .metric-icon { color:#80cde6; }
     .metric-label { fill:#b7c6d6; font-size:14px; text-anchor:middle; }
     .metric-value { fill:#e6f4ff; font-size:29px; font-weight:600; text-anchor:middle; font-variant-numeric:tabular-nums; }
-    .metric-caption { fill:#8b9bad; font-size:10px; text-anchor:middle; }
+    .metric-caption { fill:#8b9bad; font-size:12px; text-anchor:middle; }
     .core-label { fill:#b7c6d6; font-size:12px; text-anchor:middle; letter-spacing:1px; }
     .network { color:#8ed9ee; }
     .mobile-connections { display:none; }
@@ -34,20 +32,18 @@
     @media (prefers-reduced-motion: reduce) { .signal,.satellite,.core-ring { animation:none; } }
     @media (max-width:600px) {
       .desktop-connections,.background-network { display:none; } .mobile-connections { display:inline; }
-      .node-stars { transform:translate(206px,162px); } .node-contributions { transform:translate(674px,162px); }
-      .node-commits { transform:translate(206px,308px); } .node-issues { transform:translate(674px,308px); }
-      .node-prs { transform:translate(206px,454px); } .node-repositories { transform:translate(674px,454px); }
+      .node-stars { transform:translate(206px,148px); } .node-contributions { transform:translate(674px,148px); }
+      .node-commits { transform:translate(206px,280px); } .node-issues { transform:translate(674px,280px); }
+      .node-prs { transform:translate(206px,412px); } .node-repositories { transform:translate(674px,412px); }
       .satellite { rx:156px; ry:64px; } .node-halo { rx:174px; ry:82px; }
       .metric-icon { transform:translate(-10px,-56px) scale(.833333); }
       .metric-label { font-size:26px; transform:translateY(5px); }
       .metric-value { font-size:34px; transform:translateY(-9px); }
-      .metric-caption { font-size:16px; transform:translateY(14px); }
-      .core { transform:translate(440px,308px); } .core-label { font-size:18px; }
-      .heading { font-size:36px; } .subtitle { font-size:21px; } .footer { font-size:19px; }
-      .footer { transform:translateY(4px); } .footer-rule { display:none; }
+      .metric-caption { font-size:14px; transform:translateY(11px); }
+      .core { transform:translate(440px,280px); } .core-label { font-size:18px; }
     }
   </style>
-  <rect x=".5" y=".5" width="879" height="547" rx="18" fill="url(#surface)" stroke="#30363d"/>
+  <rect x=".5" y="76.5" width="879" height="419" rx="18" fill="url(#surface)" stroke="#30363d"/>
   <g clip-path="url(#card-clip)">
     <g class="network">
       <ellipse cx="450" cy="280" rx="400" ry="258" fill="url(#ambient)"/>
@@ -71,9 +67,5 @@
       </g>
       {{NODES}}
     </g>
-    <text class="heading" x="28" y="52">GitHub stats</text>
-    <text class="subtitle" x="29" y="78">@{{LOGIN}} · All-time activity</text>
-    <path class="footer-rule" d="M28 510H852" stroke="#263547" stroke-opacity=".55"/>
-    <text class="footer" x="29" y="532">Updated {{UPDATED}} UTC · GitHub API</text>
   </g>
 </svg>

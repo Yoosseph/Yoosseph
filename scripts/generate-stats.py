@@ -291,12 +291,12 @@ def render_svg(login, stats, updated):
     validate_stats(stats)
     # Statistics are the network's nodes, surrounding a larger GitHub core.
     satellites = (
-        ("stars", "star", "Stars earned", "", 148, 174, "M148 174C274 139 294 263 450 280", 206, 162, 0),
-        ("contributions", "activity", "Contributions", "", 388, 150, "M388 150C457 173 386 228 450 280", 674, 162, 2),
-        ("commits", "commit", "Commits", "", 731, 187, "M731 187C600 157 590 268 450 280", 206, 308, 4),
-        ("issues", "issue", "Issues", "", 151, 371, "M151 371C280 409 295 292 450 280", 674, 308, 5),
-        ("prs", "pr", "PRs created", "", 448, 426, "M448 426C516 376 395 337 450 280", 206, 454, 1),
-        ("repositories", "repo", "Contributed to", "all time", 734, 380, "M734 380C600 415 606 292 450 280", 674, 454, 3),
+        ("stars", "star", "Stars earned", "", 148, 174, "M148 174C274 139 294 263 450 280", 206, 148, 0),
+        ("contributions", "activity", "Contributions", "", 388, 150, "M388 150C457 173 386 228 450 280", 674, 148, 2),
+        ("commits", "commit", "Commits", "", 731, 187, "M731 187C600 157 590 268 450 280", 206, 280, 4),
+        ("issues", "issue", "Issues", "", 151, 371, "M151 371C280 409 295 292 450 280", 674, 280, 5),
+        ("prs", "pr", "PRs created", "", 448, 426, "M448 426C516 376 395 337 450 280", 206, 412, 1),
+        ("repositories", "repo", "Contributed to", "repositories", 734, 380, "M734 380C600 415 606 292 450 280", 674, 412, 3),
     )
     connections, mobile_connections, nodes = [], [], []
     metric_labels = {key: label for key, label, _ in METRICS}
@@ -307,7 +307,7 @@ def render_svg(login, stats, updated):
 
     for key, kind, label, caption, x, y, curve, mobile_x, mobile_y, delay in satellites:
         connections.append(connection(curve, delay))
-        mobile_curve = f"M{mobile_x} {mobile_y}Q440 {mobile_y} 440 308"
+        mobile_curve = f"M{mobile_x} {mobile_y}Q440 {mobile_y} 440 280"
         mobile_connections.append(connection(mobile_curve, delay))
         value = format_number(stats[key])
         # Bound unusually long scientific notation without truncating its digits.
