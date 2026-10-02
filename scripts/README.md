@@ -11,7 +11,8 @@ so signals overlap naturally. The central ring keeps a subtle heartbeat rhythm.
 
 ## Automatic updates
 
-`.github/workflows/update-stats.yml` runs daily at **04:23 UTC**, manually from
+`.github/workflows/update-stats.yml` runs every six hours at
+**04:23, 10:23, 16:23 and 22:23 UTC**, manually from
 Actions → Update neural GitHub stats → Run workflow, and on generator/template/
 workflow changes on `main`. It tests the generator, fetches all statistics,
 validates the SVG as XML, then commits only `assets/neural-github-stats.svg` if it
