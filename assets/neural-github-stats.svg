@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="432" viewBox="0 0 880 432" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">Yoosseph's GitHub stats</title>
+  <desc id="description">Total Stars Earned: 240; Total Contributions: 1,438; Total Commits: 1,067; Total Issues: 109; PRs Created: 48; Contributed to (all time): 17. All-time statistics visible to the GitHub API, updated 2026-10-02 UTC. A neural network connects activity nodes to the central GitHub logo.</desc>
+  <defs>
+    <linearGradient id="surface" x2="1" y2="1"><stop stop-color="#0d1117"/><stop offset="1" stop-color="#0d1520"/></linearGradient>
+    <linearGradient id="glass" x2="1" y2="1"><stop stop-color="#1b2b3c" stop-opacity=".52"/><stop offset="1" stop-color="#111c29" stop-opacity=".35"/></linearGradient>
+    <linearGradient id="synapse"><stop stop-color="#3b82c4" stop-opacity=".25"/><stop offset=".5" stop-color="#66cfe0" stop-opacity=".65"/><stop offset="1" stop-color="#58a6ff" stop-opacity=".45"/></linearGradient>
+    <radialGradient id="ambient"><stop stop-color="#2075a9" stop-opacity=".13"/><stop offset="1" stop-color="#2075a9" stop-opacity="0"/></radialGradient>
+    <radialGradient id="node-halo"><stop stop-color="#53c8e3" stop-opacity=".14"/><stop offset="1" stop-color="#53c8e3" stop-opacity="0"/></radialGradient>
+    <radialGradient id="core"><stop stop-color="#19364a"/><stop offset="1" stop-color="#101e2c"/></radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="card-clip"><rect x="1" y="1" width="878" height="430" rx="17"/></clipPath>
+  </defs>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .heading { fill:#e6edf3; font-size:27px; font-weight:650; letter-spacing:-.6px; }
+    .subtitle,.footer { fill:#8b9bad; font-size:12px; }
+    .metric-icon { color:#72bddc; }
+    .metric-label { fill:#b7c6d6; font-size:14px; }
+    .metric-value { fill:#e6f4ff; font-size:19px; font-weight:600; text-anchor:end; font-variant-numeric:tabular-nums; }
+    .node-label { fill:#92a9bf; font-size:11px; letter-spacing:.2px; }
+    .network { color:#8ed9ee; }
+    .signal { animation:signal-flow 12s linear infinite; }
+    .signal-1 { animation-delay:-2s; } .signal-2 { animation-delay:-4s; }
+    .signal-3 { animation-delay:-6s; } .signal-4 { animation-delay:-8s; } .signal-5 { animation-delay:-10s; }
+    .satellite { animation:node-breathe 8s ease-in-out infinite; }
+    .satellite-1,.satellite-3 { animation-delay:-3s; } .satellite-2,.satellite-5 { animation-delay:-5s; }
+    .core-ring { animation:core-breathe 9s ease-in-out infinite; }
+    @keyframes signal-flow { 0% { stroke-dashoffset:100;opacity:0; } 7% { opacity:.65; } 28% { stroke-dashoffset:0;opacity:0; } 100% { stroke-dashoffset:0;opacity:0; } }
+    @keyframes node-breathe { 0%,100% { stroke-opacity:.55; } 50% { stroke-opacity:.95; } }
+    @keyframes core-breathe { 0%,100% { opacity:.4; } 50% { opacity:.75; } }
+    @media (prefers-reduced-motion: reduce) { .signal,.satellite,.core-ring { animation:none; } }
+    @media (max-width:600px) {
+      .network { display:none; } .stat-panel { width:824px; } .metric-icon { display:none; }
+      .metric-label { font-size:26px; transform:translateX(-24px); }
+      .metric-value { font-size:29px; transform:translateX(452px); }
+      .heading { font-size:36px; } .subtitle { font-size:21px; } .footer { font-size:19px; }
+    }
+  </style>
+  <rect x=".5" y=".5" width="879" height="431" rx="18" fill="url(#surface)" stroke="#30363d"/>
+  <g clip-path="url(#card-clip)">
+    <g class="network">
+      <ellipse cx="655" cy="219" rx="225" ry="214" fill="url(#ambient)"/>
+      <g stroke="#416683" stroke-width=".7" opacity=".25">
+        <path d="M449 78 535 113 590 67 669 83 744 86 811 64 789 151 829 228 784 298 833 350 729 375 649 354 553 370 509 281 445 343 476 179 535 113"/>
+        <path d="M476 179 563 207 509 281 588 331 649 354M590 67 708 153 789 151M703 308 729 375M829 228 703 308 784 298M449 78 476 179M479 391 553 370"/>
+      </g>
+      <g fill="#69a9c9" opacity=".5"><circle cx="449" cy="78" r="2"/><circle cx="476" cy="179" r="2.5"/><circle cx="445" cy="343" r="2"/><circle cx="553" cy="370" r="2.5"/><circle cx="729" cy="375" r="2"/><circle cx="833" cy="350" r="2.5"/><circle cx="829" cy="228" r="2"/><circle cx="811" cy="64" r="2"/><circle cx="744" cy="86" r="2"/><circle cx="590" cy="67" r="1.8"/><circle cx="563" cy="207" r="2"/><circle cx="708" cy="153" r="1.6"/><circle cx="703" cy="308" r="2"/><circle cx="479" cy="391" r="1.6"/><circle cx="588" cy="331" r="1.6"/></g>
+      <path d="M535 113C602 110 577 188 650 225" stroke="url(#synapse)" stroke-width="1.3"/>
+      <path class="signal signal-0" d="M535 113C602 110 577 188 650 225" stroke="#8ce6f2" stroke-width="2" pathLength="100" stroke-dasharray="2 98" stroke-dashoffset="100" opacity="0"/>
+<path d="M669 83C716 131 611 173 650 225" stroke="url(#synapse)" stroke-width="1.3"/>
+      <path class="signal signal-2" d="M669 83C716 131 611 173 650 225" stroke="#8ce6f2" stroke-width="2" pathLength="100" stroke-dasharray="2 98" stroke-dashoffset="100" opacity="0"/>
+<path d="M789 151C730 146 738 203 650 225" stroke="url(#synapse)" stroke-width="1.3"/>
+      <path class="signal signal-4" d="M789 151C730 146 738 203 650 225" stroke="#8ce6f2" stroke-width="2" pathLength="100" stroke-dasharray="2 98" stroke-dashoffset="100" opacity="0"/>
+<path d="M784 298C718 312 741 226 650 225" stroke="url(#synapse)" stroke-width="1.3"/>
+      <path class="signal signal-1" d="M784 298C718 312 741 226 650 225" stroke="#8ce6f2" stroke-width="2" pathLength="100" stroke-dasharray="2 98" stroke-dashoffset="100" opacity="0"/>
+<path d="M649 354C599 309 696 280 650 225" stroke="url(#synapse)" stroke-width="1.3"/>
+      <path class="signal signal-5" d="M649 354C599 309 696 280 650 225" stroke="#8ce6f2" stroke-width="2" pathLength="100" stroke-dasharray="2 98" stroke-dashoffset="100" opacity="0"/>
+<path d="M509 281C568 301 570 230 650 225" stroke="url(#synapse)" stroke-width="1.3"/>
+      <path class="signal signal-3" d="M509 281C568 301 570 230 650 225" stroke="#8ce6f2" stroke-width="2" pathLength="100" stroke-dasharray="2 98" stroke-dashoffset="100" opacity="0"/>
+      <circle cx="650" cy="225" r="86" stroke="#305c7a" stroke-opacity=".22"/>
+      <path d="M583 172a86 86 0 0 1 109-23M715 281a86 86 0 0 1-104 20" stroke="#62aecb" stroke-opacity=".35" stroke-linecap="round"/>
+      <circle class="core-ring" cx="650" cy="225" r="65" stroke="#66cfe0" opacity=".4" filter="url(#glow)"/>
+      <circle cx="650" cy="225" r="58" fill="url(#core)" stroke="#477b9a" stroke-opacity=".85"/>
+      <!-- Primer mark-github-16, copyright GitHub, Inc., MIT. See scripts/README.md. -->
+      <path d="M6.766 11.328c-2.063-.25-3.516-1.734-3.516-3.656 0-.781.281-1.625.75-2.188-.203-.515-.172-1.609.063-2.062.625-.078 1.468.25 1.968.703.594-.187 1.219-.281 1.985-.281.765 0 1.39.094 1.953.265.484-.437 1.344-.765 1.969-.687.218.422.25 1.515.046 2.047.5.593.766 1.39.766 2.203 0 1.922-1.453 3.375-3.547 3.64.531.344.89 1.094.89 1.954v1.625c0 .468.391.734.86.547C13.781 14.359 16 11.53 16 8.031 16 3.61 12.406 0 7.984 0 3.563 0 0 3.61 0 8.031a7.88 7.88 0 0 0 5.172 7.422c.422.156.828-.125.828-.547v-1.25c-.219.094-.5.156-.75.156-1.031 0-1.64-.562-2.078-1.609-.172-.422-.36-.672-.719-.719-.187-.015-.25-.093-.25-.187 0-.188.313-.328.625-.328.453 0 .844.281 1.25.86.313.452.64.655 1.031.655s.641-.14 1-.5c.266-.265.47-.5.657-.656" transform="translate(622 197) scale(3.5)" fill="#e6f4ff"/>
+      <g transform="translate(535 113)">
+      <circle r="31" fill="url(#node-halo)"/>
+      <circle class="satellite satellite-0" r="23" fill="#101e2d" stroke="#3a819f" stroke-opacity=".75"/>
+      <g class="" transform="translate(-11 -11) scale(0.9166666666666666)" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8l-6.2 3.3L7 14.2 2 9.3l6.9-1Z"/></g>
+      <circle cx="17" cy="-17" r="2.3" fill="#80d8ee"/>
+      <text class="node-label" y="43" text-anchor="middle">Stars</text>
+    </g>
+<g transform="translate(669 83)">
+      <circle r="31" fill="url(#node-halo)"/>
+      <circle class="satellite satellite-2" r="23" fill="#101e2d" stroke="#3a819f" stroke-opacity=".75"/>
+      <g class="" transform="translate(-11 -11) scale(0.9166666666666666)" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l3-7 5 14 3-7h5"/></g>
+      <circle cx="17" cy="-17" r="2.3" fill="#80d8ee"/>
+      <text class="node-label" y="43" text-anchor="middle">Activity</text>
+    </g>
+<g transform="translate(789 151)">
+      <circle r="31" fill="url(#node-halo)"/>
+      <circle class="satellite satellite-4" r="23" fill="#101e2d" stroke="#3a819f" stroke-opacity=".75"/>
+      <g class="" transform="translate(-11 -11) scale(0.9166666666666666)" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h6m8 0h6"/><circle cx="12" cy="12" r="4"/></g>
+      <circle cx="17" cy="-17" r="2.3" fill="#80d8ee"/>
+      <text class="node-label" y="43" text-anchor="middle">Commits</text>
+    </g>
+<g transform="translate(784 298)">
+      <circle r="31" fill="url(#node-halo)"/>
+      <circle class="satellite satellite-1" r="23" fill="#101e2d" stroke="#3a819f" stroke-opacity=".75"/>
+      <g class="" transform="translate(-11 -11) scale(0.9166666666666666)" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="4" r="2"/><circle cx="6" cy="20" r="2"/><circle cx="18" cy="20" r="2"/><path d="M6 6v12m12 0v-7a5 5 0 0 0-5-5h-1m3-3-3 3 3 3"/></g>
+      <circle cx="17" cy="-17" r="2.3" fill="#80d8ee"/>
+      <text class="node-label" y="43" text-anchor="middle">Pull requests</text>
+    </g>
+<g transform="translate(649 354)">
+      <circle r="31" fill="url(#node-halo)"/>
+      <circle class="satellite satellite-5" r="23" fill="#101e2d" stroke="#3a819f" stroke-opacity=".75"/>
+      <g class="" transform="translate(-11 -11) scale(0.9166666666666666)" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v6m0 4v.1"/></g>
+      <circle cx="17" cy="-17" r="2.3" fill="#80d8ee"/>
+      <text class="node-label" y="43" text-anchor="middle">Issues</text>
+    </g>
+<g transform="translate(509 281)">
+      <circle r="31" fill="url(#node-halo)"/>
+      <circle class="satellite satellite-3" r="23" fill="#101e2d" stroke="#3a819f" stroke-opacity=".75"/>
+      <g class="" transform="translate(-11 -11) scale(0.9166666666666666)" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14v18H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm0 0v14m0 0h14M8 7h7"/></g>
+      <circle cx="17" cy="-17" r="2.3" fill="#80d8ee"/>
+      <text class="node-label" y="43" text-anchor="middle">Repositories</text>
+    </g>
+    </g>
+    <text class="heading" x="28" y="52">GitHub stats</text>
+    <text class="subtitle" x="29" y="78">@Yoosseph · All-time activity</text>
+    <g transform="translate(28 103)"><g transform="translate(0 0)">
+      <rect class="stat-panel" width="368" height="39" rx="8" fill="url(#glass)" stroke="#263547" stroke-opacity=".55"/>
+      <g class="metric-icon" transform="translate(13 10) scale(0.75)" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8l-6.2 3.3L7 14.2 2 9.3l6.9-1Z"/></g>
+      <text class="metric-label" x="43" y="25">Total Stars Earned</text>
+      <text class="metric-value" x="353" y="26"><title>240</title>240</text>
+    </g>
+<g transform="translate(0 46)">
+      <rect class="stat-panel" width="368" height="39" rx="8" fill="url(#glass)" stroke="#263547" stroke-opacity=".55"/>
+      <g class="metric-icon" transform="translate(13 10) scale(0.75)" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l3-7 5 14 3-7h5"/></g>
+      <text class="metric-label" x="43" y="25">Total Contributions</text>
+      <text class="metric-value" x="353" y="26"><title>1,438</title>1,438</text>
+    </g>
+<g transform="translate(0 92)">
+      <rect class="stat-panel" width="368" height="39" rx="8" fill="url(#glass)" stroke="#263547" stroke-opacity=".55"/>
+      <g class="metric-icon" transform="translate(13 10) scale(0.75)" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h6m8 0h6"/><circle cx="12" cy="12" r="4"/></g>
+      <text class="metric-label" x="43" y="25">Total Commits</text>
+      <text class="metric-value" x="353" y="26"><title>1,067</title>1,067</text>
+    </g>
+<g transform="translate(0 138)">
+      <rect class="stat-panel" width="368" height="39" rx="8" fill="url(#glass)" stroke="#263547" stroke-opacity=".55"/>
+      <g class="metric-icon" transform="translate(13 10) scale(0.75)" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v6m0 4v.1"/></g>
+      <text class="metric-label" x="43" y="25">Total Issues</text>
+      <text class="metric-value" x="353" y="26"><title>109</title>109</text>
+    </g>
+<g transform="translate(0 184)">
+      <rect class="stat-panel" width="368" height="39" rx="8" fill="url(#glass)" stroke="#263547" stroke-opacity=".55"/>
+      <g class="metric-icon" transform="translate(13 10) scale(0.75)" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="4" r="2"/><circle cx="6" cy="20" r="2"/><circle cx="18" cy="20" r="2"/><path d="M6 6v12m12 0v-7a5 5 0 0 0-5-5h-1m3-3-3 3 3 3"/></g>
+      <text class="metric-label" x="43" y="25">PRs Created</text>
+      <text class="metric-value" x="353" y="26"><title>48</title>48</text>
+    </g>
+<g transform="translate(0 230)">
+      <rect class="stat-panel" width="368" height="39" rx="8" fill="url(#glass)" stroke="#263547" stroke-opacity=".55"/>
+      <g class="metric-icon" transform="translate(13 10) scale(0.75)" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14v18H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm0 0v14m0 0h14M8 7h7"/></g>
+      <text class="metric-label" x="43" y="25">Contributed to (all time)</text>
+      <text class="metric-value" x="353" y="26"><title>17</title>17</text>
+    </g></g>
+    <path d="M28 394H396" stroke="#263547" stroke-opacity=".55"/>
+    <text class="footer" x="29" y="416">Updated 2026-10-02 UTC · GitHub API</text>
+  </g>
+</svg>

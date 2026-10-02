@@ -1,1 +1,3 @@
-![GitHub stats, contributions, authored pull requests, and repositories contributed to](https://github-stats-extended.vercel.app/api?username=Yoosseph&show_icons=true&include_all_commits=true&hide=prs,contribs&show=prs_authored,all_time_contribs,contributions&contribs_include_own_repos=true&rank_icon=github&theme=dark_github&custom_title=%20GitHub%20stats)
+<p align="center">
+  <img src="./assets/neural-github-stats.svg" width="850" alt="Yoseph's GitHub statistics: stars, contributions, commits, issues, pull requests and repositories contributed to" />
+</p>
