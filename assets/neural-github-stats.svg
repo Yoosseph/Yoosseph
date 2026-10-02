@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="432" viewBox="0 0 880 432" fill="none" role="img" aria-labelledby="title description">
   <title id="title">Yoosseph's GitHub stats</title>
-  <desc id="description">Total Stars Earned: 240; Total Contributions: 1,438; Total Commits: 1,067; Total Issues: 109; PRs Created: 48; Contributed to (all time): 17. All-time statistics visible to the GitHub API, updated 2026-10-02 UTC. A neural network connects activity nodes to the central GitHub logo.</desc>
+  <desc id="description">Total Stars Earned: 236; Total Contributions: 1,438; Total Commits: 193; Total Issues: 71; PRs Created: 9; Contributed to (all time): 17. All-time statistics visible to the GitHub API, updated 2026-10-02 UTC. A neural network connects activity nodes to the central GitHub logo.</desc>
   <defs>
     <linearGradient id="surface" x2="1" y2="1"><stop stop-color="#0d1117"/><stop offset="1" stop-color="#0d1520"/></linearGradient>
     <linearGradient id="glass" x2="1" y2="1"><stop stop-color="#1b2b3c" stop-opacity=".52"/><stop offset="1" stop-color="#111c29" stop-opacity=".35"/></linearGradient>
@@ -113,7 +113,7 @@
       <rect class="stat-panel" width="368" height="39" rx="8" fill="url(#glass)" stroke="#263547" stroke-opacity=".55"/>
       <g class="metric-icon" transform="translate(13 10) scale(0.75)" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.9L12 17.8l-6.2 3.3L7 14.2 2 9.3l6.9-1Z"/></g>
       <text class="metric-label" x="43" y="25">Total Stars Earned</text>
-      <text class="metric-value" x="353" y="26"><title>240</title>240</text>
+      <text class="metric-value" x="353" y="26"><title>236</title>236</text>
     </g>
 <g transform="translate(0 46)">
       <rect class="stat-panel" width="368" height="39" rx="8" fill="url(#glass)" stroke="#263547" stroke-opacity=".55"/>
@@ -125,19 +125,19 @@
       <rect class="stat-panel" width="368" height="39" rx="8" fill="url(#glass)" stroke="#263547" stroke-opacity=".55"/>
       <g class="metric-icon" transform="translate(13 10) scale(0.75)" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h6m8 0h6"/><circle cx="12" cy="12" r="4"/></g>
       <text class="metric-label" x="43" y="25">Total Commits</text>
-      <text class="metric-value" x="353" y="26"><title>1,067</title>1,067</text>
+      <text class="metric-value" x="353" y="26"><title>193</title>193</text>
     </g>
 <g transform="translate(0 138)">
       <rect class="stat-panel" width="368" height="39" rx="8" fill="url(#glass)" stroke="#263547" stroke-opacity=".55"/>
       <g class="metric-icon" transform="translate(13 10) scale(0.75)" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v6m0 4v.1"/></g>
       <text class="metric-label" x="43" y="25">Total Issues</text>
-      <text class="metric-value" x="353" y="26"><title>109</title>109</text>
+      <text class="metric-value" x="353" y="26"><title>71</title>71</text>
     </g>
 <g transform="translate(0 184)">
       <rect class="stat-panel" width="368" height="39" rx="8" fill="url(#glass)" stroke="#263547" stroke-opacity=".55"/>
       <g class="metric-icon" transform="translate(13 10) scale(0.75)" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="4" r="2"/><circle cx="6" cy="20" r="2"/><circle cx="18" cy="20" r="2"/><path d="M6 6v12m12 0v-7a5 5 0 0 0-5-5h-1m3-3-3 3 3 3"/></g>
       <text class="metric-label" x="43" y="25">PRs Created</text>
-      <text class="metric-value" x="353" y="26"><title>48</title>48</text>
+      <text class="metric-value" x="353" y="26"><title>9</title>9</text>
     </g>
 <g transform="translate(0 230)">
       <rect class="stat-panel" width="368" height="39" rx="8" fill="url(#glass)" stroke="#263547" stroke-opacity=".55"/>
