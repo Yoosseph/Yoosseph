@@ -22,11 +22,17 @@
     .mobile-connections { display:none; }
     .signal { animation:signal-flow 2.8s linear infinite; }
     .satellite { animation:node-heartbeat 2.8s ease-in-out infinite; }
+    .signal-0,.satellite-0 { animation-delay:-.18s; }
+    .signal-1,.satellite-1 { animation-delay:-.91s; }
+    .signal-2,.satellite-2 { animation-delay:-1.47s; }
+    .signal-3,.satellite-3 { animation-delay:-.43s; }
+    .signal-4,.satellite-4 { animation-delay:-1.95s; }
+    .signal-5,.satellite-5 { animation-delay:-2.37s; }
     .core-ring { animation:core-heartbeat 2.8s ease-in-out infinite; }
     @keyframes signal-flow {
-      0% { stroke-dashoffset:100;opacity:0; } 5% { opacity:.75; }
+      0% { stroke-dashoffset:100;opacity:0; } 5% { opacity:.85; }
       26% { stroke-dashoffset:0;opacity:0; } 34% { stroke-dashoffset:100;opacity:0; }
-      39% { opacity:.75; } 60%,100% { stroke-dashoffset:0;opacity:0; }
+      39% { opacity:.85; } 60%,100% { stroke-dashoffset:0;opacity:0; }
     }
     @keyframes node-heartbeat { 0%,20%,34%,54%,100% { stroke-opacity:.55; } 9%,43% { stroke-opacity:.95; } }
     @keyframes core-heartbeat { 0%,12%,34%,46%,74%,100% { opacity:.35; } 26%,60% { opacity:.8; } }

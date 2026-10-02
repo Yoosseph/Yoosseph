@@ -303,7 +303,7 @@ def render_svg(login, stats, updated):
 
     def connection(curve, delay):
         return f'''<path d="{curve}" stroke="url(#synapse)" stroke-width="1.3"/>
-      <path class="signal signal-{delay}" d="{curve}" stroke="#8ce6f2" stroke-width="2" pathLength="100" stroke-dasharray="2 98" stroke-dashoffset="100" opacity="0"/>'''
+      <path class="signal signal-{delay}" d="{curve}" stroke="#8ce6f2" stroke-width="2.8" stroke-linecap="round" pathLength="100" stroke-dasharray="2 98" stroke-dashoffset="100" opacity="0"/>'''
 
     for key, kind, label, caption, x, y, curve, mobile_x, mobile_y, delay in satellites:
         connections.append(connection(curve, delay))

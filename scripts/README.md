@@ -6,8 +6,8 @@ generated SVG requires no external assets. It renders a static card if animation
 are unsupported and respects reduced motion. Each statistic lives inside a
 network node. Below 600px, the same nodes reflow into two columns with larger
 labels and values while retaining the central GitHub node and its connections.
-All six nodes send two synchronized signals into GitHub every 2.8 seconds,
-with the central ring responding in a subtle heartbeat rhythm.
+Each node sends two signals into GitHub every 2.8 seconds, with varied offsets
+so signals overlap naturally. The central ring keeps a subtle heartbeat rhythm.
 
 ## Automatic updates
 
