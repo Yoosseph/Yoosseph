@@ -1,3 +1,1 @@
 ![All-time GitHub stats, authored pull requests, and repositories contributed to](https://github-stats-extended.vercel.app/api?username=Yoosseph&show_icons=true&include_all_commits=true&hide=prs,contribs&show=prs_authored,all_time_contribs&contribs_include_own_repos=true&theme=dark_github&custom_title=All-time%20GitHub%20stats)
-
-![Commits this year](https://github-stats-extended.vercel.app/api?username=Yoosseph&hide=stars,prs,issues,contribs&hide_rank=true&theme=dark_github&custom_title=Commits%20this%20year)
